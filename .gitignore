@@ -1,0 +1,39 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+.venv/
+venv/
+
+# --- Сборка C++ / scikit-build-core ---
+build/
+_skbuild/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+*.so
+*.pyd
+*.o
+*.a
+
+# --- Тесты и инструменты ---
+.pytest_cache/
+.hypothesis/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Бенчмарки ---
+.benchmarks/
+
+# --- IDE / ОС ---
+.vscode/
+.idea/
+.cache/
+*.swp
+.DS_Store
