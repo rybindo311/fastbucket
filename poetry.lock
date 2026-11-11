@@ -613,6 +613,18 @@ files = [
 global = ["pybind11-global (==3.1.0)"]
 
 [[package]]
+name = "pybind11-stubgen"
+version = "3.0.0"
+description = "PEP 561 type stubs generator for pybind11 modules"
+optional = false
+python-versions = ">=3.10"
+groups = ["dev"]
+files = [
+    {file = "pybind11_stubgen-3.0.0-py3-none-any.whl", hash = "sha256:859b7b7dbd31d00f722f19152216b5506e8a5d3fdf586944de0cade80f972298"},
+    {file = "pybind11_stubgen-3.0.0.tar.gz", hash = "sha256:b0a908ae99204e201a5148c17dc3cb789021a339ab9dc1d0517a23a87490204c"},
+]
+
+[[package]]
 name = "pydantic"
 version = "2.14.3"
 description = "Data validation using Python type hints"
@@ -1394,4 +1406,4 @@ test = ["hypothesis", "pytest"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10"
-content-hash = "e20f00662b7aedbd5c0b263429accddff8c778b95151c21876f9ce8bd58e493f"
+content-hash = "da567f70984d1013faf85ca2ae7f3bbe3fc265009e47b50495af1ecae6aa1ca1"

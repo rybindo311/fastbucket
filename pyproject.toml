@@ -38,6 +38,7 @@ minimum-version = "build-system.requires"
 build-dir = "build/{wheel_tag}"
 wheel.packages = ["src/fastbucket"]
 cmake.build-type = "Release"
+editable.rebuild = true
 
 [dependency-groups]
 dev = [
@@ -50,5 +51,6 @@ dev = [
     "uvicorn[standard] (>=0.29)",
     "pytest-benchmark (>=4)",
     "cmake (>=3.15)",
-    "ninja (>=1.13.2,<2.0.0)"
+    "ninja (>=1.13.2,<2.0.0)",
+    "pybind11-stubgen (>=3.0.0,<4.0.0)"
 ]
