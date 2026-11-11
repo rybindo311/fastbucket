@@ -34,6 +34,10 @@ target_compile_definitions(_core PRIVATE VERSION_INFO=${PROJECT_VERSION})
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
   target_compile_options(_core PRIVATE -Wall -Wextra -Wpedantic)
+  # Запрещаем склеивать a + b * c в одну FMA-инструкцию: она округляет
+  # один раз вместо двух, и результат расходится с чистым Python на 1 ULP
+  # (на ARM64 FMA есть всегда). Тесты сравнивают реализации через ==.
+  target_compile_options(_core PRIVATE -ffp-contract=off)
 endif()
 
 # Кладём .so внутрь пакета fastbucket/ в колесе
