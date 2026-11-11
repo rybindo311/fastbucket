@@ -40,6 +40,10 @@ wheel.packages = ["src/fastbucket"]
 cmake.build-type = "Release"
 editable.rebuild = true
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
 [dependency-groups]
 dev = [
     "scikit-build-core (>=0.10)",
