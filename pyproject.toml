@@ -42,6 +42,7 @@ editable.rebuild = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+python_files = ["test_*.py", "bench_*.py"]
 addopts = "-ra"
 
 [dependency-groups]
