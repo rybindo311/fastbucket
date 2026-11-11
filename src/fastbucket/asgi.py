@@ -9,6 +9,7 @@ from collections.abc import Callable
 class Stats:
     allowed: int = 0
     denied: int = 0
+    purged: int = 0
 
 
 def get_header(scope, name: bytes) -> str | None:
